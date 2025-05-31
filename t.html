@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lunaro Films</title>
+    <style>
+        /* Reset some defaults */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            color: white;
+        }
+
+
+        /* Make html and body take full height */
+        html, body {
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            overflow: hidden;
+            cursor: pointer;
+            background: #000;
+        }
+
+        /* Video as background */
+        video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            filter: brightness(0.6);
+            filter: blur(50%);
+        }
+
+
+        /* Content container centered */
+        .content {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            text-shadow:
+                0 2px 5px rgba(0,0,0,0.7),
+                0 0 10px rgba(0,0,0,0.5);
+        }
+
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5em;
+            letter-spacing: 1.4px;
+        }
+
+
+        pre {
+            font-size: 1.4rem;
+            font-weight: 500;
+            max-width: 500px;
+            line-height: 1.5;
+            background: rgba(0,0,0,0.3);
+            padding: 15px 20px;
+            border-radius: 10px;
+            user-select: none;
+        }
+
+        /* Instruction at bottom */
+        .instruction {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 1rem;
+            color: #ddd;
+            text-shadow: 0 0 5px rgba(0,0,0,0.7);
+            user-select: none;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://jeelsuthar.github.io/yogesh/"><video autoplay loop muted playsinline>
+        <source src="back.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+    <div class="content" role="main" aria-label="Thank you message">
+        <h1>Thank You Submitting Your Message</h1>
+        <p>Lunaro Films always with You and that are reaching at a soon......!</p>
+    </div>
+    <div class="instruction">Click anywhere to go back</div></a>
+</body>
+</html>
+

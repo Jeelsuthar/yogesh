@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Online</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+    
+    .book-online {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    
+    .book-online h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+    
+    .underline {
+      width: 40px;
+      height: 2px;
+      background-color: #333;
+      margin: 10px auto 40px;
+    }
+    
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    
+    .card {
+      width: 300px;
+      border: 1px solid #eee;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding-bottom: 20px;
+    }
+    
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .card h2 {
+      font-size: 1.25rem;
+      margin: 15px 0 10px;
+    }
+    
+    .card p {
+      margin: 5px 0;
+      font-size: 1rem;
+    }
+    
+    .card button {
+      margin-top: 15px;
+      background-color: #1e1e1e;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-family: 'Georgia', serif;
+      font-size: 1rem;
+    }
+    
+    .card button:hover {
+      background-color: #444;
+    }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      padding: 10px 20px;
+      background-color: #eee;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+
+    .back-button:hover {
+      background-color: #ddd;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <a href="javascript:history.back()" class="back-button">Back</a>
+
+  <section class="book-online">
+    <h1>Book Online</h1>
+    <div class="underline"></div>
+    <div class="cards">
+      <div class="card">
+        <img src="1.jpg" alt="Wedding Collection" />
+        <h2>Wedding Collection</h2>
+        <p>1 hr</p>
+        <p>Introductory Meeting</p>
+        <button>Let's Talk</button>
+      </div>
+      <div class="card">
+        <img src="2.jpg" alt="Couples Collection" />
+        <h2>Couples Collection</h2>
+        <p>1 hr</p>
+        <p>Introductory Meeting</p>
+        <button>Let's Talk</button>
+      </div>
+      <div class="card">
+        <img src="3.jpg" alt="International Wedding" />
+        <h2>International Wedding</h2>
+        <p>1 hr</p>
+        <p>Introductory Meeting</p>
+        <button>Let's Talk</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
